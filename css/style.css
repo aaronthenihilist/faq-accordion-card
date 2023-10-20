@@ -65,6 +65,10 @@ summary {
   font-size: 1.25rem;
 }
 
+summary:hover {
+  color: hsl(14, 88%, 65%);
+}
+
 details summary::-webkit-details-marker,
 details summary::marker {
  display: none; 
