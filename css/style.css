@@ -14,7 +14,7 @@ body {
     hsl(240, 73%, 65%)
   );
   min-height: calc(100vh - 2rem);
-  padding: 1rem;
+  padding: 1rem 6rem;
 }
 
 main {
@@ -30,6 +30,42 @@ main {
 
 .flex-item {
   width: 50%;
+}
+
+.flex-item:nth-of-type(1) {
+  position: relative;
+  min-height: 500px;
+}
+
+.box-gfx, .woman-gfx, .bg-pattern-gfx {
+  position: absolute;
+}
+
+.img-wrap {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.box-gfx {
+  top: 16.75rem;
+  left: -10.75rem;
+  z-index: 3;
+  width: 191px;
+}
+
+.woman-gfx {
+  z-index: 2;
+  top: 5.5rem;
+  left: -7rem;
+  overflow: hidden;
+  width: 472px;
+}
+
+.bg-pattern-gfx {
+  width: 966px;
+  left: -48rem;
+  top: -25rem;
 }
 
 .flex-item:nth-of-type(2) {
@@ -98,4 +134,63 @@ footer {
 footer a {
   font-weight: 700;
   color: #fff;
+}
+
+@media screen and (max-width: 968px) {
+  body {
+    padding: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-item:nth-of-type(1) {
+    min-height: 0;
+    max-height: 200px;
+  }
+
+  .flex-item:nth-of-type(2) {
+    padding: 4rem 2rem;
+    width: calc(100% - 4rem);
+  }
+
+  details {
+    width: 100%;
+  }
+
+  details div {
+    padding-right: 3rem;
+  }
+
+.img-wrap {
+  position: relative;
+  min-height: 150px;
+  overflow: visible;
+}
+
+.box-gfx {
+  top: 0rem;
+  left: 0;
+  width: 191px;
+  width: 25%;
+}
+
+.woman-gfx {
+  top: -5rem;
+  left: 0;
+  right: 0;
+  width: 472px;
+  width: 50%;
+}
+
+.bg-pattern-gfx {
+  display: none;
+}
 }
