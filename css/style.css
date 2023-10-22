@@ -25,6 +25,7 @@ main {
   max-width: 920px;
   background-color: #fff;
   border-radius: 2rem;
+  box-shadow: 0 25px 50px 0px hsl(238, 29%, 16%, .5);
 }
 
 .flex-item {
@@ -36,6 +37,7 @@ main {
   top: 18rem;
   left: -8rem;
   width: 191px;
+  filter: drop-shadow(0px 25px 10px hsl(238, 29%, 16%, .25));
 }
 
 .woman-gfx {
@@ -122,6 +124,7 @@ footer {
   text-align: center;
   line-height: 2rem;
   font-size: 1.25rem;
+  color: #ddd;
 }
 
 footer a {
