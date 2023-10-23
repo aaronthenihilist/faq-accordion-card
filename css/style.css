@@ -89,6 +89,7 @@ details div {
   margin-top: 1rem;
   line-height: 1.75rem;
   color: hsl(237, 12%, 33%);
+  padding-right: 3rem;
 }
 
 summary {
@@ -174,10 +175,6 @@ footer a {
 
   details {
     width: 100%;
-  }
-
-  details div {
-    padding-right: 3rem;
   }
 
   .arrow-icon {
